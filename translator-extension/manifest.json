@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek 翻译助手",
+  "version": "1.0.0",
+  "description": "使用 DeepSeek AI 进行文本翻译的浏览器插件",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DeepSeek 翻译",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://api.deepseek.com/*"
+  ],
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
